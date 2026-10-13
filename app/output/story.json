@@ -1,0 +1,35 @@
+{
+  "title": "Milo the Happy Cat",
+  "scenes": [
+    {
+      "narration": "Milo wakes up in the beautiful garden.",
+      "setting": "garden",
+      "action": "wake",
+      "duration": 4
+    },
+    {
+      "narration": "Milo starts walking around the garden.",
+      "setting": "garden",
+      "action": "walk",
+      "duration": 4
+    },
+    {
+      "narration": "Suddenly, Milo sees a butterfly and jumps!",
+      "setting": "forest",
+      "action": "jump",
+      "duration": 4
+    },
+    {
+      "narration": "Milo dances happily with his new friend.",
+      "setting": "forest",
+      "action": "dance",
+      "duration": 4
+    },
+    {
+      "narration": "After a wonderful day, Milo falls asleep.",
+      "setting": "night",
+      "action": "sleep",
+      "duration": 5
+    }
+  ]
+}
