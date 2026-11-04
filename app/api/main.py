@@ -5,7 +5,9 @@ import json, uuid, threading, logging
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
-from app.engine import Story, Prompt, storyboard, render
+from app.container import render
+from app.models import Prompt, Story
+from app.storyboard import storyboard
 
 ROOT=Path(__file__).resolve().parents[1]/'data'
 ROOT.mkdir(exist_ok=True)

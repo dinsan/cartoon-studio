@@ -1,6 +1,56 @@
+# Python virtual environments
 .venv/
+venv/
+env/
+
+# Python cache
 __pycache__/
-node_modules/
+*.py[cod]
+*$py.class
+
+# Python testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.nyc_output/
+
+# Type checking and linting
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# Generated output
+app/output/
+app/data/
+output/
 dist/
-data/
+build/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+
+# Node.js dependencies
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/

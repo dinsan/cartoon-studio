@@ -1,7 +1,9 @@
 import json, subprocess, tempfile, unittest
 from fastapi.testclient import TestClient
 from app.api.main import app
-from app.engine import Story, Scene, Prompt, storyboard, render
+from app.container import render
+from app.models import Prompt, Scene, Story
+from app.storyboard import storyboard
 
 class PipelineTests(unittest.TestCase):
     def test_story_validation(self):
