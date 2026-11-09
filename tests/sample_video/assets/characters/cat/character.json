@@ -1,0 +1,363 @@
+{
+  "id": "cat",
+  "name": "Cat",
+  "kind": "animal",
+  "description": "Milo, the original orange cat (hand-drawn artwork).",
+  "size": 140,
+  "bend": true,
+  "keywords": [
+    "cat",
+    "cats",
+    "kitten",
+    "kitty",
+    "milo"
+  ],
+  "default": "idle",
+  "rigs": {
+    "wave_01.png": {
+      "seeds": [
+        [
+          720,
+          630
+        ],
+        [
+          795,
+          565
+        ]
+      ],
+      "pivot": [
+        655,
+        680
+      ]
+    }
+  },
+  "expressions": {
+    "idle": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "wait",
+        "waiting",
+        "stand",
+        "standing",
+        "stood"
+      ],
+      "description": "Standing, breathing."
+    },
+    "walk": {
+      "frames": [
+        "walk_01.png",
+        "walk_02.png"
+      ],
+      "motion": "walk",
+      "keywords": [
+        "walk",
+        "walking",
+        "stroll"
+      ],
+      "description": "Walking (2 drawings).",
+      "hold": 3,
+      "speed": 58.0
+    },
+    "run": {
+      "frames": [
+        "walk_01.png",
+        "walk_02.png"
+      ],
+      "motion": "run",
+      "keywords": [
+        "run",
+        "running",
+        "ran",
+        "sprint"
+      ],
+      "description": "Running with the walk drawings, leaning forward.",
+      "hold": 2,
+      "speed": 135.0,
+      "lean": -6
+    },
+    "jump": {
+      "frames": [
+        "jump.png"
+      ],
+      "motion": "jump",
+      "keywords": [
+        "jump",
+        "jumping",
+        "leap",
+        "leapt"
+      ],
+      "description": "Crouch, leap and land."
+    },
+    "hop": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "hop",
+      "keywords": [
+        "hop",
+        "hopping",
+        "hopped"
+      ],
+      "description": "Small forward hops."
+    },
+    "slide": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "slide",
+      "keywords": [
+        "slide",
+        "sliding",
+        "slid"
+      ],
+      "description": "Sliding to a stop."
+    },
+    "fly": {
+      "frames": [
+        "jump.png"
+      ],
+      "motion": "fly",
+      "keywords": [
+        "fly",
+        "flying",
+        "flies",
+        "flew"
+      ],
+      "description": "Floating up into the air."
+    },
+    "dance": {
+      "frames": [
+        "wave_01.png",
+        "idle.png"
+      ],
+      "motion": "dance",
+      "keywords": [
+        "dance",
+        "dancing"
+      ],
+      "description": "Hopping and turning to a beat."
+    },
+    "spin": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "spin",
+      "keywords": [
+        "spin",
+        "spinning",
+        "spun",
+        "twirl"
+      ],
+      "description": "Spinning on the spot."
+    },
+    "turn": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "turn",
+      "keywords": [
+        "turn",
+        "turning"
+      ],
+      "description": "Turning around and back."
+    },
+    "shake": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "shake",
+      "keywords": [
+        "shake",
+        "shaking",
+        "shook",
+        "shiver"
+      ],
+      "description": "Shivering."
+    },
+    "fall": {
+      "frames": [
+        "jump.png"
+      ],
+      "motion": "fall",
+      "keywords": [
+        "fall",
+        "falling",
+        "fell"
+      ],
+      "description": "Dropping in from above and landing."
+    },
+    "sit": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "sit",
+      "keywords": [
+        "sit",
+        "sitting",
+        "sat down",
+        "sat"
+      ],
+      "description": "Settling the hindquarters down."
+    },
+    "sleep": {
+      "frames": [
+        "sleep_01.png"
+      ],
+      "motion": "sleep",
+      "keywords": [
+        "fell asleep",
+        "falls asleep",
+        "fall asleep",
+        "sleep",
+        "sleeping",
+        "asleep",
+        "slept"
+      ],
+      "description": "Curled up asleep."
+    },
+    "wake": {
+      "frames": [
+        "sleep_01.png"
+      ],
+      "motion": "wake",
+      "keywords": [
+        "wake",
+        "waking",
+        "woke up",
+        "woke"
+      ],
+      "description": "Waking up and stretching."
+    },
+    "wave": {
+      "frames": [
+        "wave_01.png"
+      ],
+      "motion": "wave",
+      "keywords": [
+        "wave",
+        "waving"
+      ],
+      "description": "Waving a paw."
+    },
+    "nod": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "nod",
+      "keywords": [
+        "nod",
+        "nodding",
+        "nodded"
+      ],
+      "description": "Nodding."
+    },
+    "bow": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "bow",
+      "keywords": [
+        "bow",
+        "bowing"
+      ],
+      "description": "Bowing."
+    },
+    "look": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "look",
+      "keywords": [
+        "look",
+        "looking"
+      ],
+      "description": "Looking behind."
+    },
+    "peek": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "peek",
+      "keywords": [
+        "peek",
+        "peeking"
+      ],
+      "description": "Leaning forward to peek."
+    },
+    "clap": {
+      "frames": [
+        "wave_01.png"
+      ],
+      "motion": "clap",
+      "keywords": [
+        "clap",
+        "clapping",
+        "clapped"
+      ],
+      "description": "Clapping paws."
+    },
+    "happy": {
+      "frames": [
+        "wave_01.png"
+      ],
+      "motion": "happy",
+      "keywords": [
+        "happy",
+        "excited",
+        "cheerful"
+      ],
+      "description": "Happy bouncing."
+    },
+    "sad": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "sad",
+      "keywords": [
+        "sad",
+        "crying",
+        "unhappy"
+      ],
+      "description": "Drooping sadly."
+    },
+    "scared": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "scared",
+      "keywords": [
+        "scared",
+        "afraid",
+        "frightened"
+      ],
+      "description": "Recoiling and trembling."
+    },
+    "surprised": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "surprised",
+      "keywords": [
+        "surprised",
+        "shocked",
+        "amazed"
+      ],
+      "description": "A startled hop."
+    },
+    "laugh": {
+      "frames": [
+        "wave_01.png"
+      ],
+      "motion": "laugh",
+      "keywords": [
+        "laugh",
+        "laughing",
+        "giggle"
+      ],
+      "description": "Rocking with laughter."
+    }
+  }
+}

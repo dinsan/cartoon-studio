@@ -1,0 +1,511 @@
+{
+  "id": "bicycle",
+  "name": "Bicycle",
+  "kind": "vehicle",
+  "description": "A blue bicycle ridden by the kid in a green helmet.",
+  "size": 181.6,
+  "bend": false,
+  "keywords": [
+    "bicycle",
+    "bike",
+    "bikes",
+    "cycle",
+    "cycling",
+    "cyclist",
+    "ride a bike",
+    "rode a bike",
+    "pedal",
+    "pedalled",
+    "pedaled"
+  ],
+  "rider": true,
+  "default": "idle",
+  "expressions": {
+    "idle": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "stop",
+        "stopped",
+        "wait",
+        "waiting",
+        "stand"
+      ],
+      "description": "Stopped with one foot down."
+    },
+    "ride": {
+      "frames": [
+        "ride_01.png",
+        "ride_02.png",
+        "ride_03.png",
+        "ride_04.png",
+        "ride_05.png",
+        "ride_06.png",
+        "ride_07.png",
+        "ride_08.png"
+      ],
+      "motion": "ride",
+      "keywords": [
+        "ride",
+        "riding",
+        "rode",
+        "cycle",
+        "cycling",
+        "bike",
+        "bicycle",
+        "pedal",
+        "go",
+        "went"
+      ],
+      "description": "Pedalling along (8 frames).",
+      "hold": 1,
+      "speed": 74.0
+    },
+    "fast": {
+      "frames": [
+        "fast_01.png",
+        "fast_02.png",
+        "fast_03.png",
+        "fast_04.png"
+      ],
+      "motion": "drive_fast",
+      "keywords": [
+        "fast",
+        "speed",
+        "race",
+        "raced",
+        "hurry",
+        "rush",
+        "zoom",
+        "zoomed"
+      ],
+      "description": "Pedalling hard (4 frames).",
+      "hold": 1,
+      "speed": 118.3
+    },
+    "coast": {
+      "frames": [
+        "coast_01.png",
+        "coast_02.png",
+        "coast_03.png"
+      ],
+      "motion": "drive",
+      "keywords": [
+        "coast",
+        "coasted",
+        "roll",
+        "rolled",
+        "glide",
+        "glided",
+        "cruise"
+      ],
+      "description": "Coasting, feet still.",
+      "hold": 1,
+      "speed": 74.0
+    },
+    "uphill": {
+      "frames": [
+        "uphill_01.png",
+        "uphill_02.png",
+        "uphill_03.png",
+        "uphill_04.png"
+      ],
+      "motion": "ride",
+      "keywords": [
+        "uphill",
+        "hill",
+        "climb",
+        "climbed",
+        "push",
+        "pushed",
+        "hard"
+      ],
+      "description": "Standing on the pedals up a hill (4 frames).",
+      "hold": 3,
+      "speed": 11.7
+    },
+    "downhill": {
+      "frames": [
+        "downhill_01.png",
+        "downhill_02.png",
+        "downhill_03.png"
+      ],
+      "motion": "drive_fast",
+      "keywords": [
+        "downhill",
+        "down the hill",
+        "wheee",
+        "whee",
+        "swoosh"
+      ],
+      "description": "Feet out, zooming downhill.",
+      "hold": 1,
+      "speed": 74.0
+    },
+    "wheelie": {
+      "frames": [
+        "wheelie.png"
+      ],
+      "motion": "wheelie",
+      "keywords": [
+        "wheelie",
+        "trick",
+        "tricks",
+        "show off",
+        "showed off"
+      ],
+      "description": "Pulling a wheelie."
+    },
+    "jump": {
+      "frames": [
+        "jump.png"
+      ],
+      "motion": "jump",
+      "keywords": [
+        "jump",
+        "jumped",
+        "hop",
+        "hopped",
+        "bump",
+        "ramp",
+        "leap"
+      ],
+      "description": "Bunny-hop jump."
+    },
+    "brake": {
+      "frames": [
+        "brake.png"
+      ],
+      "motion": "brake",
+      "keywords": [
+        "brake",
+        "braked",
+        "skid",
+        "skidded",
+        "screech",
+        "halt",
+        "stop suddenly"
+      ],
+      "description": "Skidding to a stop."
+    },
+    "bell": {
+      "frames": [
+        "bell_01.png",
+        "bell_02.png"
+      ],
+      "motion": "talk",
+      "keywords": [
+        "bell",
+        "ring",
+        "rang",
+        "ding",
+        "ting",
+        "say",
+        "said",
+        "call",
+        "called"
+      ],
+      "description": "Ringing the bell (2 frames).",
+      "hold": 3
+    },
+    "wave": {
+      "frames": [
+        "wave_01.png",
+        "wave_02.png"
+      ],
+      "motion": "wave",
+      "keywords": [
+        "wave",
+        "waved",
+        "waving",
+        "hello",
+        "hi",
+        "bye",
+        "goodbye"
+      ],
+      "description": "Waving from the bike (2 frames).",
+      "hold": 3
+    },
+    "happy": {
+      "frames": [
+        "happy.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "happy",
+        "glad",
+        "joy",
+        "smile",
+        "cheerful"
+      ],
+      "description": "Happy."
+    },
+    "sad": {
+      "frames": [
+        "sad.png"
+      ],
+      "motion": "slow",
+      "keywords": [
+        "sad",
+        "unhappy",
+        "upset",
+        "lonely"
+      ],
+      "description": "Sad."
+    },
+    "scared": {
+      "frames": [
+        "scared.png"
+      ],
+      "motion": "scared",
+      "keywords": [
+        "scared",
+        "afraid",
+        "frightened",
+        "wobbly",
+        "nervous"
+      ],
+      "description": "Scared."
+    },
+    "surprised": {
+      "frames": [
+        "surprised.png"
+      ],
+      "motion": "surprised",
+      "keywords": [
+        "surprised",
+        "shocked",
+        "wow",
+        "amazed"
+      ],
+      "description": "Surprised."
+    },
+    "laugh": {
+      "frames": [
+        "laugh.png"
+      ],
+      "motion": "giggle",
+      "keywords": [
+        "laugh",
+        "laughed",
+        "laughing",
+        "funny",
+        "giggle"
+      ],
+      "description": "Laughing."
+    },
+    "angry": {
+      "frames": [
+        "angry.png"
+      ],
+      "motion": "tremble",
+      "keywords": [
+        "angry",
+        "mad",
+        "cross",
+        "grumpy"
+      ],
+      "description": "Angry."
+    },
+    "love": {
+      "frames": [
+        "love.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "love",
+        "loves",
+        "loved",
+        "favourite",
+        "favorite"
+      ],
+      "description": "Loves the bike."
+    },
+    "tired": {
+      "frames": [
+        "tired.png"
+      ],
+      "motion": "slow",
+      "keywords": [
+        "tired",
+        "exhausted",
+        "puff",
+        "puffed",
+        "breath"
+      ],
+      "description": "Out of breath."
+    },
+    "sing": {
+      "frames": [
+        "sing_01.png",
+        "sing_02.png",
+        "sing_03.png",
+        "sing_04.png"
+      ],
+      "motion": "ride",
+      "keywords": [
+        "sing",
+        "sang",
+        "singing",
+        "song",
+        "whistle",
+        "whistled"
+      ],
+      "description": "Singing while riding (4 frames).",
+      "hold": 2,
+      "speed": 74.0
+    },
+    "nohands": {
+      "frames": [
+        "nohands_01.png",
+        "nohands_02.png",
+        "nohands_03.png"
+      ],
+      "motion": "drive",
+      "keywords": [
+        "no hands",
+        "look no hands",
+        "show",
+        "cheer",
+        "cheered",
+        "yay"
+      ],
+      "description": "Look, no hands!",
+      "hold": 1,
+      "speed": 74.0
+    },
+    "race": {
+      "frames": [
+        "race_01.png",
+        "race_02.png",
+        "race_03.png",
+        "race_04.png",
+        "race_05.png",
+        "race_06.png",
+        "race_07.png",
+        "race_08.png"
+      ],
+      "motion": "ride",
+      "keywords": [
+        "racing",
+        "competition",
+        "winner",
+        "finish",
+        "first"
+      ],
+      "description": "Racing with a number plate (8 frames).",
+      "hold": 1,
+      "speed": 74.0
+    },
+    "fall": {
+      "frames": [
+        "fall.png"
+      ],
+      "motion": "shake",
+      "keywords": [
+        "fall",
+        "fell",
+        "crash",
+        "crashed",
+        "tumble",
+        "tumbled",
+        "over the handlebars"
+      ],
+      "description": "Tumbling over the handlebars."
+    },
+    "night": {
+      "frames": [
+        "night_01.png",
+        "night_02.png",
+        "night_03.png",
+        "night_04.png",
+        "night_05.png",
+        "night_06.png",
+        "night_07.png",
+        "night_08.png"
+      ],
+      "motion": "ride",
+      "keywords": [
+        "night",
+        "dark",
+        "light",
+        "lamp",
+        "evening"
+      ],
+      "description": "Riding at night with the lamp on (8 frames).",
+      "hold": 1,
+      "speed": 74.0
+    },
+    "flat": {
+      "frames": [
+        "flat.png"
+      ],
+      "motion": "slow",
+      "keywords": [
+        "flat",
+        "flat tire",
+        "puncture",
+        "punctured",
+        "tyre",
+        "tire"
+      ],
+      "description": "Flat tyre."
+    },
+    "basket": {
+      "frames": [
+        "basket_01.png",
+        "basket_02.png",
+        "basket_03.png",
+        "basket_04.png",
+        "basket_05.png",
+        "basket_06.png",
+        "basket_07.png",
+        "basket_08.png"
+      ],
+      "motion": "ride",
+      "keywords": [
+        "basket",
+        "flowers",
+        "deliver",
+        "delivered",
+        "shopping",
+        "market",
+        "carry",
+        "carried"
+      ],
+      "description": "Riding with a basket of flowers (8 frames).",
+      "hold": 1,
+      "speed": 74.0
+    },
+    "parked": {
+      "frames": [
+        "parked.png"
+      ],
+      "motion": "still",
+      "keywords": [
+        "parked",
+        "park",
+        "leave",
+        "left",
+        "alone",
+        "empty"
+      ],
+      "description": "Bicycle parked on its own."
+    },
+    "dizzy": {
+      "frames": [
+        "dizzy.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "dizzy",
+        "wobble",
+        "wobbled",
+        "bumpy"
+      ],
+      "description": "Dizzy."
+    }
+  }
+}

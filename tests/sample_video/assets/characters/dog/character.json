@@ -1,0 +1,555 @@
+{
+  "id": "dog",
+  "name": "Dog",
+  "kind": "animal",
+  "description": "A floppy-eared puppy with a red collar.",
+  "size": 227.6,
+  "bend": false,
+  "keywords": [
+    "dog",
+    "puppy",
+    "pup",
+    "doggy",
+    "doggie",
+    "hound",
+    "animal",
+    "pet",
+    "rex",
+    "buddy"
+  ],
+  "default": "idle",
+  "expressions": {
+    "idle": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "stand",
+        "standing",
+        "wait",
+        "waiting",
+        "stay"
+      ],
+      "description": "Standing, tail relaxed."
+    },
+    "walk": {
+      "frames": [
+        "walk_01.png",
+        "walk_02.png",
+        "walk_03.png",
+        "walk_04.png"
+      ],
+      "motion": "walk",
+      "keywords": [
+        "walk",
+        "walking",
+        "walked",
+        "trot",
+        "trotted",
+        "go",
+        "went"
+      ],
+      "description": "Walking (4 frames).",
+      "hold": 3,
+      "speed": 39.9
+    },
+    "run": {
+      "frames": [
+        "run_01.png",
+        "run_02.png",
+        "run_03.png",
+        "run_04.png"
+      ],
+      "motion": "run",
+      "keywords": [
+        "run",
+        "running",
+        "ran",
+        "chase",
+        "chased",
+        "race",
+        "raced",
+        "dash",
+        "rush",
+        "hurry"
+      ],
+      "description": "Galloping (4 frames).",
+      "hold": 2,
+      "speed": 22.5
+    },
+    "jump": {
+      "frames": [
+        "jump.png"
+      ],
+      "motion": "jump",
+      "keywords": [
+        "jump",
+        "jumping",
+        "jumped",
+        "leap",
+        "leapt",
+        "hop",
+        "pounce"
+      ],
+      "description": "Leaping through the air."
+    },
+    "sit": {
+      "frames": [
+        "sit.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "sit",
+        "sitting",
+        "sat",
+        "rest",
+        "rested"
+      ],
+      "description": "Sitting nicely."
+    },
+    "lie": {
+      "frames": [
+        "lie.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "lie",
+        "lying",
+        "lay",
+        "lay down",
+        "relax",
+        "relaxed"
+      ],
+      "description": "Lying down, relaxed."
+    },
+    "sleep": {
+      "frames": [
+        "sleep.png"
+      ],
+      "motion": "sleep",
+      "keywords": [
+        "fell asleep",
+        "falls asleep",
+        "fall asleep",
+        "sleep",
+        "sleeping",
+        "asleep",
+        "slept",
+        "nap",
+        "napped"
+      ],
+      "description": "Curled up asleep."
+    },
+    "sleepy": {
+      "frames": [
+        "sleepy.png"
+      ],
+      "motion": "slow",
+      "keywords": [
+        "sleepy",
+        "yawn",
+        "yawned",
+        "tired"
+      ],
+      "description": "Yawning."
+    },
+    "beg": {
+      "frames": [
+        "beg.png"
+      ],
+      "motion": "bounce",
+      "keywords": [
+        "beg",
+        "begged",
+        "please",
+        "treat",
+        "want",
+        "wanted"
+      ],
+      "description": "Sitting up, begging."
+    },
+    "play": {
+      "frames": [
+        "play.png"
+      ],
+      "motion": "bounce",
+      "keywords": [
+        "play",
+        "playing",
+        "played",
+        "game",
+        "fun",
+        "bow"
+      ],
+      "description": "Play bow, ready to play."
+    },
+    "rollover": {
+      "frames": [
+        "rollover.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "roll",
+        "rolled",
+        "rolling",
+        "belly",
+        "tickle",
+        "tickled"
+      ],
+      "description": "Rolling on its back."
+    },
+    "sniff": {
+      "frames": [
+        "sniff.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "sniff",
+        "sniffed",
+        "smell",
+        "smelled",
+        "search",
+        "searched",
+        "track"
+      ],
+      "description": "Nose to the ground, sniffing."
+    },
+    "dig": {
+      "frames": [
+        "dig_01.png",
+        "dig_02.png"
+      ],
+      "motion": "cycle",
+      "keywords": [
+        "dig",
+        "digging",
+        "dug",
+        "bury",
+        "buried",
+        "bone",
+        "hole"
+      ],
+      "description": "Digging (2 frames).",
+      "hold": 2
+    },
+    "bark": {
+      "frames": [
+        "bark_01.png",
+        "bark_02.png"
+      ],
+      "motion": "talk",
+      "keywords": [
+        "bark",
+        "barking",
+        "barked",
+        "woof",
+        "call",
+        "called",
+        "say",
+        "said",
+        "talk"
+      ],
+      "description": "Barking (2 frames).",
+      "hold": 3
+    },
+    "howl": {
+      "frames": [
+        "howl.png"
+      ],
+      "motion": "slow",
+      "keywords": [
+        "howl",
+        "howling",
+        "howled",
+        "sing",
+        "sang",
+        "moon",
+        "awoo"
+      ],
+      "description": "Howling at the sky."
+    },
+    "wag": {
+      "frames": [
+        "wag_01.png",
+        "wag_02.png",
+        "wag_03.png"
+      ],
+      "motion": "cycle",
+      "keywords": [
+        "wag",
+        "wagging",
+        "wagged",
+        "tail",
+        "friend",
+        "welcome"
+      ],
+      "description": "Wagging its tail (3 frames).",
+      "hold": 2
+    },
+    "scratch": {
+      "frames": [
+        "scratch.png"
+      ],
+      "motion": "tremble",
+      "keywords": [
+        "scratch",
+        "scratching",
+        "scratched",
+        "itch",
+        "itchy",
+        "flea"
+      ],
+      "description": "Scratching an itch."
+    },
+    "paw": {
+      "frames": [
+        "paw.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "paw",
+        "shake",
+        "high five",
+        "give",
+        "gave",
+        "offer"
+      ],
+      "description": "Offering a paw."
+    },
+    "fetch": {
+      "frames": [
+        "fetch.png"
+      ],
+      "motion": "bounce",
+      "keywords": [
+        "fetch",
+        "fetched",
+        "ball",
+        "bring",
+        "brought",
+        "catch",
+        "caught",
+        "toy"
+      ],
+      "description": "Ball in its mouth."
+    },
+    "eat": {
+      "frames": [
+        "eat.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "eat",
+        "eating",
+        "ate",
+        "food",
+        "dinner",
+        "lunch",
+        "breakfast",
+        "hungry",
+        "bowl"
+      ],
+      "description": "Eating from a bowl."
+    },
+    "happy": {
+      "frames": [
+        "happy.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "happy",
+        "glad",
+        "joy",
+        "cheerful",
+        "smile",
+        "smiled",
+        "good"
+      ],
+      "description": "Happy, tongue out."
+    },
+    "excited": {
+      "frames": [
+        "excited.png"
+      ],
+      "motion": "bounce",
+      "keywords": [
+        "excited",
+        "thrilled",
+        "yay",
+        "hooray"
+      ],
+      "description": "Jumping up with excitement."
+    },
+    "sad": {
+      "frames": [
+        "sad.png"
+      ],
+      "motion": "slow",
+      "keywords": [
+        "sad",
+        "unhappy",
+        "upset",
+        "lonely",
+        "miss",
+        "missed"
+      ],
+      "description": "Ears and tail down."
+    },
+    "cry": {
+      "frames": [
+        "cry.png"
+      ],
+      "motion": "sob",
+      "keywords": [
+        "cry",
+        "crying",
+        "cried",
+        "whimper",
+        "whine",
+        "whined",
+        "tears"
+      ],
+      "description": "Whimpering."
+    },
+    "angry": {
+      "frames": [
+        "angry.png"
+      ],
+      "motion": "tremble",
+      "keywords": [
+        "angry",
+        "mad",
+        "growl",
+        "growled",
+        "grr",
+        "snarl"
+      ],
+      "description": "Growling, hackles up."
+    },
+    "scared": {
+      "frames": [
+        "scared.png"
+      ],
+      "motion": "scared",
+      "keywords": [
+        "scared",
+        "afraid",
+        "frightened",
+        "fear",
+        "hide",
+        "hid",
+        "thunder"
+      ],
+      "description": "Cowering, tail tucked."
+    },
+    "surprised": {
+      "frames": [
+        "surprised.png"
+      ],
+      "motion": "surprised",
+      "keywords": [
+        "surprised",
+        "shocked",
+        "amazed",
+        "startled",
+        "wow"
+      ],
+      "description": "Ears up, startled."
+    },
+    "confused": {
+      "frames": [
+        "confused.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "confused",
+        "puzzled",
+        "curious",
+        "wonder",
+        "wondered",
+        "huh"
+      ],
+      "description": "Head tilted, puzzled."
+    },
+    "love": {
+      "frames": [
+        "love.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "love",
+        "loves",
+        "loved",
+        "hug",
+        "hugged",
+        "cuddle",
+        "kiss",
+        "lick",
+        "licked"
+      ],
+      "description": "In love."
+    },
+    "guilty": {
+      "frames": [
+        "guilty.png"
+      ],
+      "motion": "slow",
+      "keywords": [
+        "guilty",
+        "naughty",
+        "sorry",
+        "oops",
+        "mess",
+        "broke",
+        "chewed"
+      ],
+      "description": "Looking guilty."
+    },
+    "laugh": {
+      "frames": [
+        "laugh.png"
+      ],
+      "motion": "giggle",
+      "keywords": [
+        "laugh",
+        "laughing",
+        "laughed",
+        "funny",
+        "joke"
+      ],
+      "description": "Laughing."
+    },
+    "dizzy": {
+      "frames": [
+        "dizzy.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "dizzy",
+        "spin",
+        "spun",
+        "bump",
+        "bumped",
+        "wobbly"
+      ],
+      "description": "Dizzy, seeing stars."
+    },
+    "proud": {
+      "frames": [
+        "proud.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "proud",
+        "brave",
+        "good boy",
+        "good dog",
+        "win",
+        "won",
+        "hero"
+      ],
+      "description": "Nose up, proud."
+    }
+  }
+}

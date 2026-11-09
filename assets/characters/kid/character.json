@@ -1,0 +1,646 @@
+{
+  "id": "kid",
+  "name": "Kid",
+  "kind": "person",
+  "description": "A cheerful girl with pigtails, yellow T-shirt and blue shorts.",
+  "size": 181.6,
+  "bend": false,
+  "keywords": [
+    "kid",
+    "child",
+    "children",
+    "girl",
+    "boy",
+    "daughter",
+    "son",
+    "little one",
+    "lily",
+    "kiddo",
+    "student"
+  ],
+  "default": "idle",
+  "expressions": {
+    "idle": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "stand",
+        "standing",
+        "wait",
+        "waiting",
+        "stay"
+      ],
+      "description": "Standing, relaxed smile."
+    },
+    "happy": {
+      "frames": [
+        "happy.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "happy",
+        "glad",
+        "smile",
+        "smiling",
+        "cheerful",
+        "joy"
+      ],
+      "description": "Big smile with rosy cheeks."
+    },
+    "excited": {
+      "frames": [
+        "excited.png"
+      ],
+      "motion": "bounce",
+      "keywords": [
+        "excited",
+        "thrilled",
+        "yay",
+        "hooray"
+      ],
+      "description": "Star eyes, bouncing with arms up."
+    },
+    "sad": {
+      "frames": [
+        "sad.png"
+      ],
+      "motion": "slow",
+      "keywords": [
+        "sad",
+        "unhappy",
+        "upset",
+        "lonely",
+        "sorry"
+      ],
+      "description": "Droopy eyes and a frown."
+    },
+    "cry": {
+      "frames": [
+        "cry.png"
+      ],
+      "motion": "sob",
+      "keywords": [
+        "cry",
+        "crying",
+        "cried",
+        "tears",
+        "weep",
+        "sob"
+      ],
+      "description": "Crying with hands at the eyes."
+    },
+    "angry": {
+      "frames": [
+        "angry.png"
+      ],
+      "motion": "tremble",
+      "keywords": [
+        "angry",
+        "mad",
+        "furious",
+        "cross",
+        "grumpy"
+      ],
+      "description": "Clenched fists and teeth."
+    },
+    "surprised": {
+      "frames": [
+        "surprised.png"
+      ],
+      "motion": "surprised",
+      "keywords": [
+        "surprised",
+        "shocked",
+        "amazed",
+        "wow",
+        "astonished"
+      ],
+      "description": "Wide eyes, open mouth."
+    },
+    "scared": {
+      "frames": [
+        "scared.png"
+      ],
+      "motion": "scared",
+      "keywords": [
+        "scared",
+        "afraid",
+        "frightened",
+        "fear",
+        "terrified"
+      ],
+      "description": "Leaning away, hands up, sweating."
+    },
+    "laugh": {
+      "frames": [
+        "laugh.png"
+      ],
+      "motion": "giggle",
+      "keywords": [
+        "laugh",
+        "laughing",
+        "laughed",
+        "giggle",
+        "funny",
+        "haha"
+      ],
+      "description": "Laughing, holding the tummy."
+    },
+    "think": {
+      "frames": [
+        "think.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "think",
+        "thinking",
+        "thought",
+        "wonder",
+        "hmm"
+      ],
+      "description": "Hand on chin, thinking."
+    },
+    "idea": {
+      "frames": [
+        "idea.png"
+      ],
+      "motion": "surprised",
+      "keywords": [
+        "idea",
+        "realize",
+        "realized",
+        "remember",
+        "aha"
+      ],
+      "description": "Finger up with a light bulb."
+    },
+    "confused": {
+      "frames": [
+        "confused.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "confused",
+        "puzzled",
+        "unsure",
+        "lost",
+        "shrug"
+      ],
+      "description": "Shrugging, head tilted."
+    },
+    "shy": {
+      "frames": [
+        "shy.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "shy",
+        "embarrassed",
+        "blush",
+        "blushed",
+        "timid"
+      ],
+      "description": "Blushing, looking away."
+    },
+    "love": {
+      "frames": [
+        "love.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "love",
+        "loves",
+        "loved",
+        "adore",
+        "hug",
+        "heart"
+      ],
+      "description": "Heart eyes, hands on heart."
+    },
+    "worried": {
+      "frames": [
+        "worried.png"
+      ],
+      "motion": "tremble",
+      "keywords": [
+        "worried",
+        "nervous",
+        "anxious",
+        "worry"
+      ],
+      "description": "Nervous frown, hands together."
+    },
+    "tired": {
+      "frames": [
+        "tired.png"
+      ],
+      "motion": "slow",
+      "keywords": [
+        "tired",
+        "exhausted",
+        "weary",
+        "sleepy"
+      ],
+      "description": "Slumped and out of breath."
+    },
+    "yawn": {
+      "frames": [
+        "yawn.png"
+      ],
+      "motion": "slow",
+      "keywords": [
+        "yawn",
+        "yawning",
+        "yawned",
+        "stretch",
+        "stretching"
+      ],
+      "description": "Stretching with a big yawn."
+    },
+    "sleep": {
+      "frames": [
+        "sleep.png"
+      ],
+      "motion": "sleep",
+      "keywords": [
+        "fell asleep",
+        "falls asleep",
+        "fall asleep",
+        "sleep",
+        "sleeping",
+        "asleep",
+        "slept",
+        "nap",
+        "bed"
+      ],
+      "description": "Lying down asleep."
+    },
+    "wink": {
+      "frames": [
+        "wink.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "wink",
+        "winked",
+        "thumbs",
+        "okay",
+        "great",
+        "cool"
+      ],
+      "description": "Wink and thumbs up."
+    },
+    "silly": {
+      "frames": [
+        "silly.png"
+      ],
+      "motion": "bounce",
+      "keywords": [
+        "silly",
+        "funny face",
+        "tease",
+        "teasing",
+        "joke"
+      ],
+      "description": "Tongue out, pulling a funny face."
+    },
+    "proud": {
+      "frames": [
+        "proud.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "proud",
+        "brave",
+        "strong",
+        "win",
+        "won"
+      ],
+      "description": "Hands on hips, chin up."
+    },
+    "talk": {
+      "frames": [
+        "talk_01.png",
+        "talk_02.png"
+      ],
+      "motion": "talk",
+      "keywords": [
+        "talk",
+        "talking",
+        "say",
+        "said",
+        "says",
+        "tell",
+        "told",
+        "speak",
+        "ask",
+        "asked"
+      ],
+      "description": "Talking with a hand gesture.",
+      "hold": 3
+    },
+    "shout": {
+      "frames": [
+        "shout.png"
+      ],
+      "motion": "pulse",
+      "keywords": [
+        "shout",
+        "shouting",
+        "shouted",
+        "yell",
+        "yelled",
+        "call",
+        "called",
+        "scream"
+      ],
+      "description": "Shouting with hands cupped."
+    },
+    "sing": {
+      "frames": [
+        "sing_01.png",
+        "sing_02.png"
+      ],
+      "motion": "talk",
+      "keywords": [
+        "sing",
+        "singing",
+        "sang",
+        "song",
+        "music"
+      ],
+      "description": "Singing with arms open.",
+      "hold": 4
+    },
+    "wave": {
+      "frames": [
+        "wave_01.png",
+        "wave_02.png"
+      ],
+      "motion": "wave",
+      "keywords": [
+        "wave",
+        "waving",
+        "waved",
+        "hello",
+        "hi",
+        "goodbye",
+        "bye"
+      ],
+      "description": "Waving hello.",
+      "hold": 3
+    },
+    "walk": {
+      "frames": [
+        "walk_01.png",
+        "walk_02.png",
+        "walk_03.png",
+        "walk_04.png"
+      ],
+      "motion": "walk",
+      "keywords": [
+        "walk",
+        "walking",
+        "walked",
+        "stroll",
+        "go",
+        "went",
+        "goes"
+      ],
+      "description": "Walking (4 frames).",
+      "hold": 3,
+      "speed": 89.3
+    },
+    "run": {
+      "frames": [
+        "run_01.png",
+        "run_02.png",
+        "run_03.png",
+        "run_04.png"
+      ],
+      "motion": "run",
+      "keywords": [
+        "run",
+        "running",
+        "ran",
+        "hurry",
+        "race",
+        "raced",
+        "rush",
+        "chase",
+        "sprint"
+      ],
+      "description": "Running (4 frames).",
+      "hold": 2,
+      "speed": 248.6
+    },
+    "jump": {
+      "frames": [
+        "jump.png"
+      ],
+      "motion": "jump",
+      "keywords": [
+        "jump",
+        "jumping",
+        "jumped",
+        "leap",
+        "leapt",
+        "hop"
+      ],
+      "description": "Jumping with arms up."
+    },
+    "dance": {
+      "frames": [
+        "dance_01.png",
+        "dance_02.png"
+      ],
+      "motion": "dance",
+      "keywords": [
+        "dance",
+        "dancing",
+        "danced",
+        "party",
+        "boogie"
+      ],
+      "description": "Dancing (2 frames).",
+      "hold": 6
+    },
+    "clap": {
+      "frames": [
+        "clap_01.png",
+        "clap_02.png"
+      ],
+      "motion": "clap",
+      "keywords": [
+        "clap",
+        "clapping",
+        "clapped",
+        "applause",
+        "applaud"
+      ],
+      "description": "Clapping (2 frames).",
+      "hold": 2
+    },
+    "cheer": {
+      "frames": [
+        "cheer_01.png",
+        "cheer_02.png"
+      ],
+      "motion": "bounce",
+      "keywords": [
+        "cheer",
+        "cheering",
+        "cheered",
+        "celebrate",
+        "celebrated",
+        "victory"
+      ],
+      "description": "Cheering with fists up.",
+      "hold": 4
+    },
+    "point": {
+      "frames": [
+        "point.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "point",
+        "pointing",
+        "pointed",
+        "show",
+        "showed",
+        "look",
+        "looked",
+        "see",
+        "saw"
+      ],
+      "description": "Pointing ahead."
+    },
+    "bow": {
+      "frames": [
+        "bow.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "bow",
+        "bowing",
+        "bowed",
+        "thank",
+        "thanks",
+        "greet",
+        "greeted"
+      ],
+      "description": "Polite bow."
+    },
+    "fall": {
+      "frames": [
+        "fall.png"
+      ],
+      "motion": "fall",
+      "keywords": [
+        "fall",
+        "falling",
+        "fell",
+        "trip",
+        "tripped",
+        "slip",
+        "slipped"
+      ],
+      "description": "Falling, arms flailing."
+    },
+    "sit": {
+      "frames": [
+        "sit.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "sit",
+        "sitting",
+        "sat",
+        "seat",
+        "rest",
+        "rested"
+      ],
+      "description": "Sitting on the ground."
+    },
+    "read": {
+      "frames": [
+        "read.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "read",
+        "reading",
+        "book",
+        "story",
+        "study",
+        "school"
+      ],
+      "description": "Reading a book."
+    },
+    "eat": {
+      "frames": [
+        "eat.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "eat",
+        "eating",
+        "ate",
+        "ice cream",
+        "snack",
+        "treat",
+        "lunch",
+        "hungry"
+      ],
+      "description": "Enjoying an ice cream."
+    },
+    "balloon": {
+      "frames": [
+        "balloon.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "balloon",
+        "birthday",
+        "fair",
+        "gift",
+        "present"
+      ],
+      "description": "Holding a red balloon."
+    },
+    "play": {
+      "frames": [
+        "play.png"
+      ],
+      "motion": "bounce",
+      "keywords": [
+        "play",
+        "playing",
+        "played",
+        "ball",
+        "game",
+        "toy",
+        "fun"
+      ],
+      "description": "Playing with a ball."
+    },
+    "flower": {
+      "frames": [
+        "flower.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "flower",
+        "flowers",
+        "pick",
+        "picked",
+        "smell",
+        "garden"
+      ],
+      "description": "Holding a flower."
+    }
+  }
+}
