@@ -1,0 +1,75 @@
+{
+  "title": "Lily's Busy Day",
+  "scenes": [
+    {
+      "narration": "Lily wakes up and yawns in the garden.",
+      "setting": "garden",
+      "character": "kid",
+      "action": "yawn",
+      "duration": 4
+    },
+    {
+      "narration": "Lily waves at her dad.",
+      "setting": "garden",
+      "character": "kid",
+      "action": "wave",
+      "duration": 3
+    },
+    {
+      "narration": "Dad is drinking coffee.",
+      "setting": "garden",
+      "character": "adult",
+      "action": "coffee",
+      "duration": 3
+    },
+    {
+      "narration": "The puppy runs into the forest.",
+      "setting": "forest",
+      "character": "dog",
+      "action": "run",
+      "duration": 4
+    },
+    {
+      "narration": "The dog barks at a bird in the forest.",
+      "setting": "forest",
+      "character": "dog",
+      "action": "bark",
+      "duration": 3
+    },
+    {
+      "narration": "Lily rides her bike along the path.",
+      "setting": "garden",
+      "character": "bicycle",
+      "action": "ride",
+      "duration": 4
+    },
+    {
+      "narration": "A red car honks hello.",
+      "setting": "garden",
+      "character": "car",
+      "action": "honk",
+      "duration": 3
+    },
+    {
+      "narration": "The car drives into the forest.",
+      "setting": "forest",
+      "character": "car",
+      "action": "drive",
+      "duration": 4
+    },
+    {
+      "narration": "At night Milo the cat dances.",
+      "setting": "night",
+      "character": "cat",
+      "action": "dance",
+      "duration": 4
+    },
+    {
+      "narration": "Dad dozes in his chair at night.",
+      "setting": "night",
+      "character": "adult",
+      "action": "doze",
+      "duration": 3
+    }
+  ]
+}

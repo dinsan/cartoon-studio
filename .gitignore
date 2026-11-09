@@ -23,6 +23,7 @@ htmlcov/
 # Generated output
 app/output/
 app/data/
+tests/sample_video/output/
 output/
 dist/
 build/

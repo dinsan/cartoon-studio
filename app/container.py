@@ -1,6 +1,7 @@
 """Wires the components together and exposes the compatibility wrappers.
 
-Importing this module loads all image assets, so import it only when needed.
+Importing this module loads the backgrounds and character manifests; character
+drawings are prepared on first use.
 """
 
 from pathlib import Path

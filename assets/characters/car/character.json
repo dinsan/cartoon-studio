@@ -1,0 +1,493 @@
+{
+  "id": "car",
+  "name": "Car",
+  "kind": "vehicle",
+  "description": "A little red car with a face (four wheels).",
+  "size": 270.0,
+  "bend": false,
+  "keywords": [
+    "car",
+    "cars",
+    "vehicle",
+    "auto",
+    "automobile",
+    "taxi",
+    "jeep",
+    "truck",
+    "van",
+    "four-wheel",
+    "4x4",
+    "beep"
+  ],
+  "default": "idle",
+  "expressions": {
+    "idle": {
+      "frames": [
+        "idle.png"
+      ],
+      "motion": "engine",
+      "keywords": [
+        "park",
+        "parked",
+        "wait",
+        "waiting",
+        "stop",
+        "stopped",
+        "engine"
+      ],
+      "description": "Parked with the engine running."
+    },
+    "drive": {
+      "frames": [
+        "drive_01.png",
+        "drive_02.png",
+        "drive_03.png"
+      ],
+      "motion": "drive",
+      "keywords": [
+        "drive",
+        "driving",
+        "drove",
+        "go",
+        "went",
+        "ride",
+        "road",
+        "trip",
+        "travel"
+      ],
+      "description": "Driving along (wheels turn, 3 frames).",
+      "hold": 1,
+      "speed": 121.9
+    },
+    "fast": {
+      "frames": [
+        "fast_01.png",
+        "fast_02.png"
+      ],
+      "motion": "drive_fast",
+      "keywords": [
+        "fast",
+        "speed",
+        "speeding",
+        "zoom",
+        "zoomed",
+        "race",
+        "raced",
+        "hurry",
+        "rush"
+      ],
+      "description": "Zooming at top speed.",
+      "hold": 2,
+      "speed": 219.5
+    },
+    "reverse": {
+      "frames": [
+        "reverse_01.png",
+        "reverse_02.png",
+        "reverse_03.png"
+      ],
+      "motion": "reverse",
+      "keywords": [
+        "reverse",
+        "reversed",
+        "back up",
+        "backed",
+        "backwards"
+      ],
+      "description": "Reversing carefully (3 frames).",
+      "hold": 1,
+      "speed": 121.9
+    },
+    "brake": {
+      "frames": [
+        "brake.png"
+      ],
+      "motion": "brake",
+      "keywords": [
+        "brake",
+        "braked",
+        "stop suddenly",
+        "screech",
+        "skid",
+        "skidded",
+        "halt"
+      ],
+      "description": "Slamming on the brakes."
+    },
+    "honk": {
+      "frames": [
+        "honk_01.png",
+        "honk_02.png"
+      ],
+      "motion": "talk",
+      "keywords": [
+        "honk",
+        "honked",
+        "beep",
+        "toot",
+        "horn",
+        "say",
+        "said",
+        "call",
+        "called"
+      ],
+      "description": "Honking the horn (2 frames).",
+      "hold": 3
+    },
+    "lights": {
+      "frames": [
+        "lights.png"
+      ],
+      "motion": "engine",
+      "keywords": [
+        "lights",
+        "headlights",
+        "dark",
+        "night",
+        "tunnel",
+        "shine"
+      ],
+      "description": "Headlights on."
+    },
+    "jump": {
+      "frames": [
+        "jump.png"
+      ],
+      "motion": "jump",
+      "keywords": [
+        "jump",
+        "jumped",
+        "fly",
+        "flew",
+        "ramp",
+        "bump",
+        "bumped"
+      ],
+      "description": "Flying off a bump."
+    },
+    "bounce": {
+      "frames": [
+        "bounce.png"
+      ],
+      "motion": "bounce",
+      "keywords": [
+        "bounce",
+        "bounced",
+        "bouncy",
+        "dance",
+        "danced",
+        "music",
+        "excited"
+      ],
+      "description": "Bouncing on its springs."
+    },
+    "happy": {
+      "frames": [
+        "happy.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "happy",
+        "glad",
+        "smile",
+        "joy",
+        "cheerful"
+      ],
+      "description": "Happy."
+    },
+    "sad": {
+      "frames": [
+        "sad.png"
+      ],
+      "motion": "slow",
+      "keywords": [
+        "sad",
+        "unhappy",
+        "upset",
+        "lonely"
+      ],
+      "description": "Sad."
+    },
+    "cry": {
+      "frames": [
+        "cry.png"
+      ],
+      "motion": "sob",
+      "keywords": [
+        "cry",
+        "crying",
+        "cried",
+        "tears",
+        "sob"
+      ],
+      "description": "Crying."
+    },
+    "angry": {
+      "frames": [
+        "angry.png"
+      ],
+      "motion": "tremble",
+      "keywords": [
+        "angry",
+        "mad",
+        "furious",
+        "grumpy",
+        "cross"
+      ],
+      "description": "Angry, steaming."
+    },
+    "surprised": {
+      "frames": [
+        "surprised.png"
+      ],
+      "motion": "surprised",
+      "keywords": [
+        "surprised",
+        "shocked",
+        "amazed",
+        "wow",
+        "startled"
+      ],
+      "description": "Surprised."
+    },
+    "scared": {
+      "frames": [
+        "scared.png"
+      ],
+      "motion": "scared",
+      "keywords": [
+        "scared",
+        "afraid",
+        "frightened",
+        "fear",
+        "nervous"
+      ],
+      "description": "Scared."
+    },
+    "laugh": {
+      "frames": [
+        "laugh.png"
+      ],
+      "motion": "giggle",
+      "keywords": [
+        "laugh",
+        "laughing",
+        "laughed",
+        "funny",
+        "joke",
+        "giggle"
+      ],
+      "description": "Laughing."
+    },
+    "sleep": {
+      "frames": [
+        "sleep.png"
+      ],
+      "motion": "sleep",
+      "keywords": [
+        "fell asleep",
+        "falls asleep",
+        "fall asleep",
+        "sleep",
+        "sleeping",
+        "asleep",
+        "slept",
+        "nap",
+        "garage",
+        "rest",
+        "rested"
+      ],
+      "description": "Asleep in the garage."
+    },
+    "sleepy": {
+      "frames": [
+        "sleepy.png"
+      ],
+      "motion": "slow",
+      "keywords": [
+        "sleepy",
+        "tired",
+        "yawn",
+        "yawned"
+      ],
+      "description": "Sleepy."
+    },
+    "wink": {
+      "frames": [
+        "wink.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "wink",
+        "winked",
+        "cool",
+        "okay",
+        "great"
+      ],
+      "description": "Winking."
+    },
+    "love": {
+      "frames": [
+        "love.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "love",
+        "loves",
+        "loved",
+        "friend",
+        "friends"
+      ],
+      "description": "In love."
+    },
+    "dizzy": {
+      "frames": [
+        "dizzy.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "dizzy",
+        "spin",
+        "spun",
+        "wobbly",
+        "round and round"
+      ],
+      "description": "Dizzy."
+    },
+    "confused": {
+      "frames": [
+        "confused.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "confused",
+        "lost",
+        "puzzled",
+        "which way",
+        "map"
+      ],
+      "description": "Lost and confused."
+    },
+    "proud": {
+      "frames": [
+        "proud.png"
+      ],
+      "motion": "idle",
+      "keywords": [
+        "proud",
+        "shiny",
+        "new",
+        "clean",
+        "win",
+        "won"
+      ],
+      "description": "Proud and shiny."
+    },
+    "worried": {
+      "frames": [
+        "worried.png"
+      ],
+      "motion": "tremble",
+      "keywords": [
+        "worried",
+        "anxious",
+        "late",
+        "traffic"
+      ],
+      "description": "Worried."
+    },
+    "breakdown": {
+      "frames": [
+        "breakdown.png"
+      ],
+      "motion": "tremble",
+      "keywords": [
+        "break",
+        "broke",
+        "broken",
+        "breakdown",
+        "smoke",
+        "smoking",
+        "engine trouble"
+      ],
+      "description": "Broken down, smoke from the engine."
+    },
+    "flat": {
+      "frames": [
+        "flat.png"
+      ],
+      "motion": "slow",
+      "keywords": [
+        "flat",
+        "flat tire",
+        "puncture",
+        "punctured",
+        "tyre",
+        "tire"
+      ],
+      "description": "Flat tyre!"
+    },
+    "wash": {
+      "frames": [
+        "wash.png"
+      ],
+      "motion": "sway",
+      "keywords": [
+        "wash",
+        "washed",
+        "washing",
+        "bubbles",
+        "soap",
+        "clean"
+      ],
+      "description": "Getting a bubbly wash."
+    },
+    "muddy": {
+      "frames": [
+        "muddy.png"
+      ],
+      "motion": "bounce",
+      "keywords": [
+        "mud",
+        "muddy",
+        "dirty",
+        "puddle",
+        "splash",
+        "splashed"
+      ],
+      "description": "Covered in mud."
+    },
+    "crash": {
+      "frames": [
+        "crash.png"
+      ],
+      "motion": "shake",
+      "keywords": [
+        "crash",
+        "crashed",
+        "hit",
+        "bang",
+        "accident"
+      ],
+      "description": "Bump! A little crash."
+    },
+    "race": {
+      "frames": [
+        "race_01.png",
+        "race_02.png",
+        "race_03.png"
+      ],
+      "motion": "drive_fast",
+      "keywords": [
+        "racing",
+        "race car",
+        "competition",
+        "finish",
+        "winner"
+      ],
+      "description": "Racing with a number on the door.",
+      "hold": 1,
+      "speed": 219.5
+    }
+  }
+}

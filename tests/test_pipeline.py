@@ -2,6 +2,7 @@ import json, subprocess, tempfile, unittest
 from fastapi.testclient import TestClient
 from app.api.main import app
 from app.container import render
+from app.config import MAX_SCENES
 from app.models import Prompt, Scene, Story
 from app.storyboard import storyboard
 
@@ -11,7 +12,7 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(len(result.scenes),2)
         self.assertEqual(result.scenes[1].action,'jump')
         self.assertEqual(result.scenes[1].setting,'forest')
-        self.assertLessEqual(len(storyboard(Prompt(prompt='long '*350)).scenes),8)
+        self.assertLessEqual(len(storyboard(Prompt(prompt='long '*350)).scenes),MAX_SCENES)
 
     def test_api_validation_and_missing_job(self):
         with TestClient(app) as client:

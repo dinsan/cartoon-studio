@@ -5,6 +5,7 @@ import json, uuid, threading, logging
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
+from app.characters import CharacterError, library
 from app.container import render
 from app.models import Prompt, Story
 from app.storyboard import storyboard
@@ -41,6 +42,25 @@ app.add_middleware(CORSMiddleware,allow_origins=['http://localhost:5173','http:/
 
 @app.get('/health')
 def health(): return {'status':'ok'}
+
+@app.get('/api/characters')
+def characters():
+    """Characters, their expressions and the image each expression uses."""
+    out=[]
+    for spec in library().characters.values():
+        info=spec.summary()
+        for name,e in info['expressions'].items():
+            e['images']=[f'/api/characters/{spec.id}/{f}' for f in e['frames']]
+        out.append(info)
+    return out
+
+@app.get('/api/characters/{cid}/{filename}')
+def character_image(cid:str, filename:str):
+    try: spec=library().get(cid)
+    except CharacterError: raise HTTPException(404,'Character not found')
+    # Only serve images the manifest links to (no arbitrary file access).
+    if not any(filename in e.frames for e in spec.expressions.values()): raise HTTPException(404,'Image not found')
+    return FileResponse(spec.directory/filename, media_type='image/png')
 
 @app.post('/api/storyboard',response_model=Story)
 def plan(request:Prompt):
